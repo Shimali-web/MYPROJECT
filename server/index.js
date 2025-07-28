@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const app = express();
 const cors = require('cors');
 
+const PORT = process.env.PORT || 3001;
+
 //Middleware to parse JSON bodies
 app.use(express.json());
 app.use(cors())
@@ -121,6 +123,6 @@ app.put('/api/employees/:id',async(req,res)=>{
 
 
 
-app.listen(3001,()=>{
+app.listen(PORT,()=>{
     console.log('🚀Server running on http://localhost:3001');
 });
