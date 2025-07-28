@@ -1,0 +1,90 @@
+/* === Update Container === */
+.container-update {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  height: 430px;
+}
+
+.container-update :hover {
+  transform: scale(1.02);
+}
+
+/* === Heading === */
+.login-form h1 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
+}
+
+
+
+/* === Form Inputs === */
+.container-update input {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-update input::placeholder {
+  color: black;
+  
+}
+
+.container-update input:focus {
+ background: skyblue;
+  box-shadow: 0 0 8px #00c6ff;
+}
+
+/* === Submit Button === */
+.login-form button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.container-update button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .container-update {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  .login-form h1 {
+    font-size: 22px;
+  }
+
+  .login-form input,
+  .login-form button {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}

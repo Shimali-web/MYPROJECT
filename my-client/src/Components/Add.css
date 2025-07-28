@@ -1,0 +1,84 @@
+/* Container with glassy effect */
+
+.login-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading with glow */
+.login-form h1 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
+}
+
+/* Inputs */
+.login-form input {
+  width: 90%;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input::placeholder {
+  color: black;
+}
+
+.login-form input:focus {
+  background: skyblue;
+  box-shadow: 0 0 5px #00c6ff;
+}
+
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+}

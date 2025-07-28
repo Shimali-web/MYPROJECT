@@ -1,0 +1,115 @@
+/* Overall page */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  margin: 30px 0 15px;
+  font-size: 28px;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+/* Nav Bar */
+nav {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+nav a:hover {
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.1);
+}
+
+nav a.active {
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.25);
+  box-shadow: 0 0 8px #00f0ff;
+}
+
+nav a.active::after {
+  content: none;
+  /* Remove underline effect */
+}
+
+/* Main content area with spacing */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Footer - Fixed at the bottom */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 14px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  max-height: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  header,
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  nav {
+    justify-content: flex-start;
+    gap: 7px;
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+   
+  
+
+  .main-content {
+    margin: 0 10px;
+  }
+}
