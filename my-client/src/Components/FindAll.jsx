@@ -9,7 +9,7 @@ export function FindAll()
    {
     e.preventDefault();
     try{
-        const response = await axios.get('http://localhost:3001/api/employees');
+        const response = await axios.get('https://myproject-thbh.onrender.com/api/employees');
         setEmployees(response.data);
 
     }
